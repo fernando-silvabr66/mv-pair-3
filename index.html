@@ -1,54 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey Form</title>
-  
-</head>
-<body>
-    <header id = "title" >
-        <h1>Microverse Collaborating Coding Challenge</h1>
-    </header>
-    <p id="description">
-      Help us to improve our services by completing the form below.
-    </p>
-    <form id="Survey-form">
-        Name <input type = "text" id = "name-label" name = "name" placeholder="Enter your full name"></br>
-        Email  <input type = "email" id = "email-label" name = "email" placeholder="Enter your email"></br>
-        Age (Optional) <input type = "number" id = "number-id" name = "age" placeholder="Age" min ="18" max = "45"></br>
-        Which part of the Collaborative Trials did you like most? <br>
-        
-        <input type="radio" id="coding-challenge1" name="trials" value="Coding Challenge 1">
-            <label for="coding-challenge1">Coding Challenge 1</label><br>
-        <input type="radio" id="coding-challenge2" name="trials" value="Coding Challenge 2">
-            <label for="coding-challenge2"> Coding Challenge 2</label><br>
-        <input type="radio" id="html-css-project" name="trials" value="HTML/CSS Project">
-            <label for="html-css-project">HTML/CSS Project</label><br>
+    <title>Survey Form Microvers Trials - Fernando & Naison</title>
+    <link rel="stylesheet" href="css/style.css">
 
+    <header id = "title" >
+      <h1>Microverse Collaborating Coding Challenge - Fernando & Naison</h1>
+  </header>
+
+  </head>
+
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    
+    <body>
+    
+      <p id="description">
+        Help us to improve our services by completing the form below.
+      </p>
       
-       
+      <form id="survey-form">
+          Name <input type = "text" id = "name" name = "name" placeholder="Enter your full name"></br>
+          Email  <input type = "email" id = "email" name = "email" placeholder="Enter your email"></br>
+          Age (Optional) <input type = "number" id = "number" name = "age" placeholder="Age" min ="18" max = "45"></br>
+          Which part of the Collaborative Trials did you like most? <br>
           
-       <label for="recommend">Would you recommend Microverse?</label>  <br>
-        <select name="dropdown" id="dropdown">
-            <option value="mostdifinately">Most Difinately</option>
-            <option value="definately">Definately</option>
-            <option value="probably">Probably</option>
-            <option value="no">No</option>
-        </select><br>
-       Why did you join Microverse?</br>
-        <input type="checkbox" id="dev" name="developer" value="Software Developer">
-        <label for="dev">To become a Software Developer</label><br>
-        <input type="checkbox" id="dev2" name="code" value="Cding Challenge">
-        <label for="dev2">To test my coding skills</label><br>
-        <input type="checkbox" id="dev3" name="join" value="Explore Microverse">
-        <label for="dev3"> To know if Microverse is the right place for me.</label><br>
-        <input type="checkbox" id="dev4" name="none" value="None">
-        <label for="dev4"> None of the above.</label><br>
-        Any comments or suggestions?<br>
-        <textarea name="comments" id="suggestions" cols="30" rows="10"></textarea><br>
-        <input type="submit" id = "submit" value="Submit">
-</form>
-</body>
+          <input type="radio" id="coding-challenge1" name="trials" value="Coding Challenge 1">
+              <label for="coding-challenge1">Coding Challenge 1</label><br>
+          <input type="radio" id="coding-challenge2" name="trials" value="Coding Challenge 2">
+              <label for="coding-challenge2"> Coding Challenge 2</label><br>
+          <input type="radio" id="html-css-project" name="trials" value="HTML/CSS Project">
+              <label for="html-css-project">HTML/CSS Project</label><br>
+            
+         <label for="recommend">Would you recommend Microverse?</label>  <br>
+          <select name="dropdown" id="dropdown">
+              <option value="most definately">Most Definately</option>
+              <option value="definately">Definately</option>
+              <option value="probably">Probably</option>
+              <option value="no">No</option>
+          </select>
+          
+          <br>         
+          Why did you join Microverse?</br>
+          <input type="checkbox" id="dev" name="developer" value="Software Developer">
+          <label for="dev">To become a Software Developer</label><br>
+          <input type="checkbox" id="dev2" name="code" value="Cding Challenge">
+          <label for="dev2">To test my coding skills</label><br>
+          <input type="checkbox" id="dev3" name="join" value="Explore Microverse">
+          <label for="dev3"> To know if Microverse is the right place for me.</label><br>
+          <input type="checkbox" id="dev4" name="none" value="None">
+          <label for="dev4"> None of the above.</label>
+          
+          <br>
+          Any comments or suggestions?<br>
+          <textarea name="comments" id="suggestions" cols="30" rows="10"></textarea><br>
+          
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+
+  </form>
+
+    <script  src="js/index.js"></script>
+  
+  </body>
 </html>
